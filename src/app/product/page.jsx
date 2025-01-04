@@ -5,7 +5,7 @@ import Image from "next/image";
 const dataProduct = [
 	{
 		judul: "Judul baju Pertama",
-		gambar: "/soon.svg",
+		gambar: "./soon.svg",
 		description: "Terbuat dari cotton combed 24s dengan sabolon plastison dengan potongan baju regular fit",
 		harga: "120.000",
 	},
