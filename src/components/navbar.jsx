@@ -69,15 +69,15 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="h-full flex items-center justify-between py-4 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl border-b-2 border-slate-800">
+		<div className="h-full flex items-center justify-between py-4 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 text-xl border-b-2 border-slate-800">
 			{/* Links */}
-			<div className="hidden md:flex gap-8 w-1/3">
+			<div className="hidden lg:flex gap-4 w-1/3">
 				{links.map((link) => (
 					<NavLink link={link} key={link.title} />
 				))}
 			</div>
 			{/* Respopnsive Menu */}
-			<div className="md:hidden w-1/3">
+			<div className="lg:hidden w-1/3">
 				{/* Menu Button */}
 				<button className="w-8 h-6 flex flex-col justify-between z-50 relative" onClick={() => setOpen(!open)}>
 					<motion.div
@@ -102,10 +102,10 @@ const Navbar = () => {
 						variants={listVariants}
 						initial="closed"
 						animate="opened"
-						className="absolute top-0 left-0 w-[calc(100vw-5rem)] h-screen bg-white border-r-2 border-slate-800 text-slate-800 flex flex-col mt-24 p-4 gap-4 text-4xl z-40"
+						className="absolute top-0 left-0 w-[calc(100vw-5rem)] h-screen bg-white border-r-2 border-slate-800 text-slate-800 flex flex-col mt-24 p-4 gap-4 text-xl z-40"
 					>
 						{links.map((link) => (
-							<div className="border-b-2 pb-2 border-slate-800" key={link.title}>
+							<div className="pb-2 border-slate-800" key={link.title}>
 								<Link href={link.url} onClick={() => setOpen(!open)}>
 									{link.title}
 								</Link>
@@ -117,13 +117,13 @@ const Navbar = () => {
 			{/* Logo */}
 			<div className="w-1/3 h-20 flex relative xl:w-1/3 xl:justify-center">
 				<Link href="/" className="text-sm font-semibold flex items-center justify-center">
-					<Image src="./logo2.svg" fill className="object-fill" alt="logo" />
+					<Image src="/logo2.svg" fill className="object-fill" alt="logo" />
 				</Link>
 			</div>
 			{/* link whatsapp */}
 			<div className="w-1/3 flex justify-end">
 				<Link href={`https://wa.me/${waNumber}`}>
-					<Image src={"./whatsapp.png"} width={24} height={24} alt=""></Image>
+					<Image src="/whatsapp.png" width={24} height={24} alt=""></Image>
 				</Link>
 			</div>
 		</div>
