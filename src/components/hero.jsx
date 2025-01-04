@@ -29,7 +29,7 @@ const Hero = () => {
 								</div>
 							</div> */}
 				<div className="text-3xl font-bold mb-6 text-center w-full h-full relative">
-					<Image src="/soon.svg" alt="logo" fill className="object-fit" />
+					<Image src="./soon.svg" alt="logo" fill className="object-fit" />
 				</div>
 			</section>
 		</div>

@@ -14,7 +14,7 @@ const About = () => {
 					transition={{ duration: 0.8, delay: 0.3 }}
 				>
 					<div className="text-3xl font-bold mb-6 text-center w-full h-24 relative">
-						<Image src="/logo2.svg" alt="logo" fill className="object-fit" />
+						<Image src="./logo2.svg" alt="logo" fill className="object-fit" />
 					</div>
 					<p className="text-lg text-gray-600 leading-relaxed text-justify">
 						Hops Beat is a brand fashion for a men's, founded in Bandung since 2024. Hops beat was born from a

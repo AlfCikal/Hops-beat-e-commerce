@@ -21,7 +21,7 @@ const Footer = () => {
 					))}
 				</div>
 				<div className="text-3xl font-bold text-center w-32 h-24 relative">
-					<Image src="/logoWhite.svg" alt="logo" fill className="object-fit" />
+					<Image src="./logoWhite.svg" alt="logo" fill className="object-fit" />
 				</div>
 			</div>
 			<div className="w-full h-full flex items-center justify-end">

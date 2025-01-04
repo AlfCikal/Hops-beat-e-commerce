@@ -23,13 +23,13 @@ const ProductModal = ({ product, closeModal }) => {
 					{/* Image list*/}
 					<div className="w-full gap-2 mt-12 lg:w-[calc(100%-6rem)] flex flex-wrap items-center relative">
 						<div className="w-28 h-28 relative">
-							<Image src="/soon.svg" fill className="object-cover" alt="product foto"></Image>
+							<Image src="./soon.svg" fill className="object-cover" alt="product foto"></Image>
 						</div>
 						<div className="w-28 h-28 relative">
-							<Image src="/soon.svg" fill className="object-cover" alt="product foto"></Image>
+							<Image src="./soon.svg" fill className="object-cover" alt="product foto"></Image>
 						</div>
 						<div className="w-28 h-28 relative">
-							<Image src="/soon.svg" fill className="object-cover" alt="product foto"></Image>
+							<Image src="./soon.svg" fill className="object-cover" alt="product foto"></Image>
 						</div>
 					</div>
 				</div>
