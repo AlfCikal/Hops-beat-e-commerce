@@ -6,13 +6,13 @@ const ProductScroll = () => {
 		{
 			id: `BI'001`,
 			judul: `BANDOENG ISLAND BI'001`,
-			gambar: "/soon.svg",
+			gambar: "./soon.svg",
 			description: "Terbuat dari cotton combed 24s dengan sabolon plastison dengan potongan baju regular fit",
 			harga: "120.000",
 		},
 		{
 			judul: "COMING SOON",
-			gambar: "/soon.svg",
+			gambar: "./soon.svg",
 			description: "SOON",
 			harga: "xxxx",
 		},
