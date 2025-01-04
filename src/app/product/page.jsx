@@ -11,7 +11,7 @@ const dataProduct = [
 	},
 	{
 		judul: "COMING SOON",
-		gambar: "/soon.svg",
+		gambar: "./soon.svg",
 		description: "SOON",
 		harga: "xxxx",
 	},
