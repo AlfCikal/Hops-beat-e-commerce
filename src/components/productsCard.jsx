@@ -30,6 +30,8 @@ const ProductCard = ({ product }) => {
 		}
 	};
 
+	const gambar = product.gambar;
+
 	return (
 		<div className="h-full">
 			{/* Product Card */}
@@ -52,7 +54,13 @@ const ProductCard = ({ product }) => {
 			>
 				{/* Image container */}
 				<div className="w-48 h-48 bg-neutral-400 rounded-t-xl flex items-center justify-center relative">
-					<Image src="./soon.svg" fill className="object-cover rounded-t-xl" alt="Coming Soon" draggable="false" />
+					<Image
+						src={gambar[0]}
+						fill
+						className="object-cover object-bottom rounded-t-xl"
+						alt="Coming Soon"
+						draggable="false"
+					/>
 				</div>
 
 				{/* Text container */}

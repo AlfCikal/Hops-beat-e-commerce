@@ -1,5 +1,5 @@
 import Hero from "@/components/hero";
-import ProductScroll from "@/components/productScroll";
+import ProductList from "@/components/productList";
 
 export default function Home() {
 	return (
@@ -7,7 +7,7 @@ export default function Home() {
 			<Hero />
 			<div className="flex flex-col gap-4 bg-gray-100 py-8 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
 				<h1 className="text-2xl font-semibold">Our Product</h1>
-				<ProductScroll />
+				<ProductList recomend={true} />
 			</div>
 		</div>
 	);

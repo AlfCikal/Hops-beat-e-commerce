@@ -35,7 +35,6 @@ const ProductSlider = ({ products }) => {
 							className="rounded-lg"
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1, transition: { duration: 0.7, ease: "backIn" } }}
-							// transition={{ delay: 0.5 }}
 							exit={{ opacity: 0 }}
 						>
 							<ProductCard product={product} />

@@ -1,69 +1,5 @@
-import ProductCard from "@/components/productsCard";
-import ProductSlider from "@/components/productSlider";
+import ProductList from "@/components/productList";
 import Image from "next/image";
-
-const dataProduct = [
-	{
-		judul: "Judul baju Pertama",
-		gambar: "/soon.svg",
-		description: "Terbuat dari cotton combed 24s dengan sabolon plastison dengan potongan baju regular fit",
-		harga: "120.000",
-	},
-	{
-		judul: "COMING SOON",
-		gambar: "/soon.svg",
-		description: "SOON",
-		harga: "xxxx",
-	},
-	// {
-	// 	judul: "Judul baju Ketiga",
-	// 	gambar: "/soon.svg",
-	// 	description: "A premium leather bag to complete your look.",
-	// 	harga: "xxx",
-	// },
-	// {
-	// 	judul: "Judul baju Keempat",
-	// 	gambar: "/soon.svg",
-	// 	description: "A premium leather bag to complete your look.",
-	// 	harga: "xxx",
-	// },
-	// {
-	// 	judul: "Judul baju Kelima",
-	// 	gambar: "/soon.svg",
-	// 	description: "A premium leather bag to complete your look.",
-	// 	harga: "xxx",
-	// },
-	// {
-	// 	judul: "Judul baju Keenam",
-	// 	gambar: "/soon.svg",
-	// 	description: "A premium leather bag to complete your look.",
-	// 	harga: "xxx",
-	// },
-	// {
-	// 	judul: "Judul baju Ketujuh",
-	// 	gambar: "/soon.svg",
-	// 	description: "A premium leather bag to complete your look.",
-	// 	harga: "xxx",
-	// },
-	// {
-	// 	judul: "Judul baju kedelapan",
-	// 	gambar: "/soon.svg",
-	// 	description: "A premium leather bag to complete your look.",
-	// 	harga: "xxx",
-	// },
-	// {
-	// 	judul: "Judul baju kesembilan",
-	// 	gambar: "/soon.svg",
-	// 	description: "A premium leather bag to complete your look.",
-	// 	harga: "xxx",
-	// },
-	// {
-	// 	judul: "Judul baju kesepuluh",
-	// 	gambar: "/soon.svg",
-	// 	description: "A premium leather bag to complete your look.",
-	// 	harga: "xxx",
-	// },
-];
 
 const Product = () => {
 	return (
@@ -78,7 +14,7 @@ const Product = () => {
 					</div>
 				</div> */}
 				<div className="text-3xl font-bold mb-6 text-center w-full h-full relative">
-					<Image src="./soon.svg" alt="logo" fill className="object-fit" />
+					<Image src="/baju/BandungIsland.jpg" alt="logo" fill className="object-cover" />
 				</div>
 			</section>
 
@@ -90,7 +26,7 @@ const Product = () => {
 						<ProductCard key={product.judul} product={product} />
 					))}
 				</div> */}
-				<ProductSlider products={dataProduct} />
+				<ProductList />
 			</section>
 
 			{/* Reviews Section */}

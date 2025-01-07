@@ -101,7 +101,7 @@ const Contact = () => {
 					transition={{ duration: 0.8, delay: 0.5 }}
 				>
 					<div className="text-3xl font-bold text-center w-full h-24 relative">
-						<Image src="./logo2.svg" alt="logo" fill className="object-fit" />
+						<Image src="/logo2.svg" alt="logo" fill className="object-fit" />
 					</div>
 					<p className="text-xl font-semibold mb-6 text-center">Click to contact and order</p>
 					<div className="flex flex-col gap-12 text-center">

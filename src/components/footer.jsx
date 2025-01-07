@@ -12,8 +12,8 @@ const Footer = () => {
 	return (
 		<div className="flex flex-col w-full h-full bg-slate-900 py-4 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
 			{/* Menu */}
-			<div className="flex justify-between">
-				<div className="h-full w-max px-12 flex flex-col gap-2 text-white">
+			<div className="flex justify-between items-center pt-4">
+				<div className="h-full w-max flex flex-col gap-2 text-white">
 					{links.map((link) => (
 						<Link href={link.url} key={link.title}>
 							{link.title}
@@ -21,11 +21,11 @@ const Footer = () => {
 					))}
 				</div>
 				<div className="text-3xl font-bold text-center w-32 h-24 relative">
-					<Image src="./logoWhite.svg" alt="logo" fill className="object-fit" />
+					<Image src="/logoWhite.svg" alt="logo" fill className="object-fit" />
 				</div>
 			</div>
 			<div className="w-full h-full flex items-center justify-end">
-				<h2 className="text-white pt-2">
+				<h2 className="text-white">
 					<span className="text-xl">&copy;</span> 2025 Hops Beat
 				</h2>
 			</div>

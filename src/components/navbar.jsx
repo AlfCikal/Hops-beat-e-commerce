@@ -117,13 +117,13 @@ const Navbar = () => {
 			{/* Logo */}
 			<div className="w-1/3 h-20 flex relative xl:w-1/3 xl:justify-center">
 				<Link href="/" className="text-sm font-semibold flex items-center justify-center">
-					<Image src="./logo2.svg" fill className="object-fill" alt="logo" />
+					<Image src="/logo2.svg" fill className="object-fill" alt="logo" />
 				</Link>
 			</div>
 			{/* link whatsapp */}
 			<div className="w-1/3 flex justify-end">
 				<Link href={`https://wa.me/${waNumber}`}>
-					<Image src="./whatsapp.png" width={24} height={24} alt=""></Image>
+					<Image src="/whatsapp.png" width={24} height={24} alt=""></Image>
 				</Link>
 			</div>
 		</div>
