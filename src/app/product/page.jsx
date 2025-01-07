@@ -1,20 +1,6 @@
 import ProductList from "@/components/productList";
 import Image from "next/image";
 
-const dataProduct = [
-	{
-		judul: "Judul baju Pertama",
-		gambar: "./soon.svg",
-		description: "Terbuat dari cotton combed 24s dengan sabolon plastison dengan potongan baju regular fit",
-		harga: "120.000",
-	},
-	{
-		judul: "COMING SOON",
-		gambar: "./soon.svg",
-		description: "SOON",
-		harga: "xxxx",
-	},
-
 const Product = () => {
 	return (
 		<div className="min-h-screen items-center justify-center">
@@ -28,7 +14,7 @@ const Product = () => {
 					</div>
 				</div> */}
 				<div className="text-3xl font-bold mb-6 text-center w-full h-full relative">
-					<Image src="/baju/BandungIsland.jpg" alt="logo" fill className="object-cover" />
+					<Image src="./baju/BandungIsland.jpg" alt="logo" fill className="object-cover" />
 				</div>
 			</section>
 

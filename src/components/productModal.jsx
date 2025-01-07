@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import Image from "next/image";
 import ModalImage from "./modalImage";
 
 const ProductModal = ({ product, closeModal }) => {
@@ -17,20 +16,7 @@ const ProductModal = ({ product, closeModal }) => {
 			{/* Content container */}
 			<div className="flex flex-col gap-12 lg:flex-row items-center mt-24 px-8">
 				{/* Image Container */}
-				{/* <div className="flex w-full flex-col items-center justify-center lg:w-1/2">
-					
-					<div className="w-full h-fit relative md:w-[calc(100%-6rem)]">
-						<Image src={gambar[1]} alt={product.judul} width={6964} height={6624} className="object-cover rounded-md" />
-					</div>
-				
-					<div className="w-full gap-2 mt-12 lg:w-[calc(100%-6rem)] flex flex-wrap items-center relative">
-						{gambar.map((item, n) => (
-							<div className="w-28 h-28 relative" key={n}>
-								<Image src={item} fill className="object-cover" alt="product foto"></Image>
-							</div>
-						))}
-					</div>
-				</div> */}
+
 				<ModalImage data={product} />
 				{/* Text Container */}
 				<div className="w-full mt-12 flex flex-col gap-4 lg:w-1/2">
