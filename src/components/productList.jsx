@@ -3,7 +3,7 @@ const ProductList = async ({ recomend = false, products }) => {
 	const dataProduct = recomend ? products.filter((item) => item.isRecomend) : products;
 
 	return (
-		// card container
+		// card containe
 		<div className="overflow-hidden w-full">
 			<ProductSlider products={dataProduct} />
 		</div>
