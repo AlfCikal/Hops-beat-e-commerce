@@ -12,7 +12,7 @@ const getData = async (basePath) => {
 };
 
 const ProductList = async ({ recomend = false }) => {
-	const basePath = "https://alfcikal.github.io/Hops-beat-e-commerce/";
+	const basePath = "https://alfcikal.github.io/Hops-beat-e-commerce";
 	const data = await getData(basePath);
 	const dataProduct = recomend ? data.filter((item) => item.isRecomend) : data;
 
