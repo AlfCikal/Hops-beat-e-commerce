@@ -2,7 +2,6 @@ import { motion } from "motion/react";
 import ModalImage from "./modalImage";
 
 const ProductModal = ({ product, closeModal }) => {
-	console.log(product);
 	return (
 		<motion.div
 			className="bg-gray-100 rounded-lg shadow-lg p-6 overflow-y-scroll w-screen h-full flex flex-col fixed z-40 top-0 left-0 pb-12"

@@ -21,12 +21,7 @@ const Product = () => {
 			{/* Product Details Section */}
 			<section className="py-16 bg-gray-200 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
 				<h2 className="text-3xl font-semibold text-center">Our Products</h2>
-				{/* <div className="flex">
-					{dataProduct.map((product) => (
-						<ProductCard key={product.judul} product={product} />
-					))}
-				</div> */}
-				<ProductList products={data} />
+				<ProductList />
 			</section>
 
 			{/* Reviews Section */}
