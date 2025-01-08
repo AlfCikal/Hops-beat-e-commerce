@@ -1,23 +1,5 @@
-"use client";
 import Hero from "@/components/hero";
 import ProductList from "@/components/productList";
-
-const getStaticProps = async () => {
-	const basePath = "https://alfcikal.github.io/Hops-beat-e-commerce";
-	const res = await fetch(`${basePath}/data/data.json`);
-
-	if (!res.ok) {
-		throw new Error("Failed");
-	}
-
-	const data = await res.json();
-
-	return {
-		props: {
-			products: data,
-		},
-	};
-};
 
 export default function Home({ data }) {
 	return (

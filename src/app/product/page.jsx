@@ -1,25 +1,7 @@
-"use client";
 import ProductList from "@/components/productList";
 import Image from "next/image";
 
-const getStaticProps = async () => {
-	const basePath = "https://alfcikal.github.io/Hops-beat-e-commerce";
-	const res = await fetch(`${basePath}/data/data.json`);
-
-	if (!res.ok) {
-		throw new Error("Failed");
-	}
-
-	const data = await res.json();
-
-	return {
-		props: {
-			products: data,
-		},
-	};
-};
-
-const Product = ({ data }) => {
+const Product = () => {
 	return (
 		<div className="min-h-screen items-center justify-center">
 			{/* Hero Section */}
